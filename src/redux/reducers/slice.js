@@ -8,4 +8,5 @@ const userSlice = createSlice({
   reducers: {}
 });
 
+export const userActions = userSlice.actions;
 export const userReducer = userSlice.reducer;
