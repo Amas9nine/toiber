@@ -1,8 +1,10 @@
 import React from "react";
 import scss from "./Sign_in.module.scss";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function Sign_in() {
+  const { t } = useTranslation();
   return (
     <>
       <section className={scss.sign_main}>
@@ -12,14 +14,14 @@ function Sign_in() {
           <div className={scss.sign}>
             <img src="./images/signIn/logo.svg" alt="logo" />
             <form>
-              <input type="email" placeholder="Email" />
-              <input type="password" placeholder="Password" />
+              <input type="email" placeholder={t("sign_in.email")} />
+              <input type="password" placeholder={t("sign_in.password")} />
             </form>
             <Link to="#" className={scss.forgot}>
-              Forgot password?
+              {t("sign_in.forgot")}
             </Link>
             <button>
-              <h3>Sign in</h3>
+              <h3>{t("sign_in.sign_in")}</h3>
             </button>
           </div>
         </div>

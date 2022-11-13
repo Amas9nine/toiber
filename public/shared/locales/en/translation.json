@@ -1,4 +1,10 @@
 {
     "dashboard": "Dashboard",
-    "homepage": "HomePage"
+    "homepage": "HomePage",
+    "sign_in":{
+        "email": "Email",
+        "password": "Password",
+        "forgot": "Forgot password?",
+        "sign_in": "Sign in"
+    }
 }
