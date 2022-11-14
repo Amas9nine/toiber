@@ -1,4 +1,9 @@
 {
-    "dashboard": "Dashboard",
-    "homepage": "HomePage"
+    "header": {
+        "Perfomers": "Performers and services",
+        "Restorans": "Restaurants and establishments",
+        "Cooperation": "Cooperation",
+        "SignIn": "SignIn",
+        "SignUp": "SignUp"
+    }
 }

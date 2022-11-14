@@ -1,9 +1,9 @@
-import { useTranslation } from "react-i18next";
+import Header from "../components/header/Header";
+
 const HomePage = () => {
-  const { t } = useTranslation();
   return (
     <>
-      <h1>{t("homepage")}</h1>
+      <Header />
     </>
   );
 };
