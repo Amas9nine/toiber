@@ -1,4 +1,23 @@
 {
     "dashboard": "Dashboard",
-    "homepage": "HomePage"
+    "homepage": "HomePage",
+    "footer": {
+        "Help": "HELP",
+        "FAQs": "FAQs",
+        "Map": "Map",
+        "Recommendations": "Recommendations",
+        "Comments": "Comments",
+        "Benefits": "Benefits",
+        "Service": "SERVICES",
+        "Restaurants": "Restaurants",
+        "Decor": "Decoration",
+        "Filming": "Filmings",
+        "Stage": "Estrade",
+        "Leading": "Leading",
+        "Wardrobe": "Wardrobe",
+        "Tuple": "Tuple",
+        "Info":"This site is completely commercial and does not contain provocative and other information contrary to law",
+        "Social":"SOCIAL NETWORKS",
+        "Reserv":"All rights reserved"
+    }
 }
