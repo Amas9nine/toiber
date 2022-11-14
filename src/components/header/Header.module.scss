@@ -7,7 +7,7 @@
     align-items: center;
     .burger__menu {
       cursor: pointer;
-        visibility: hidden;
+      display: none;
       background: none;
       border: none;
       img {
@@ -163,7 +163,7 @@
       width: 95%;
       margin: 0 auto;
       .burger__menu {
-        visibility: visible;
+        display: block;
       }
       .left__content{
         
