@@ -1,0 +1,208 @@
+.sign_main{
+	background-color: #8E3498;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	color: #E4A7EB;
+}
+.left_ornament{
+	position: absolute;
+	left: -68%;
+	z-index: 1;
+	height: 95%;
+	width: 100%;
+	bottom: 1%;
+	background-image: url(../../../public/images/signIn/ornament.png);
+	background-size: 120% 200%;
+}
+.right_ornament{
+	position: absolute;
+	right: -68%;
+	z-index: 1;
+	height: 95%;
+	width: 100%;
+	bottom: 1%;
+	background-image: url(../../../public/images/signIn/ornament.png);
+	background-size: 120% 200%;
+	transform: rotate(180deg);
+}
+.container{
+	z-index: 2;
+	max-width: 1280px;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.sign{
+	width: 37%;
+	height: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+img{
+	width: 60%;
+	margin: 0 auto;
+}
+
+form{
+	padding: 5% 0;
+	display: flex;
+	flex-direction: column;
+	color: #E4A7EB;
+	input{
+		font-family: 'Montserrat', sans-serif;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 36px;
+		line-height: 44px;
+		color: #E4A7EB;
+		background-color: rgba(255, 255, 255, 0);
+		margin-top: 5%;
+		border: none;
+		border-bottom:2px solid #fff ;
+	}
+	::-webkit-input-placeholder {
+		color:    #E4A7EB;
+	 }
+	 :-moz-placeholder {
+		color:    #E4A7EB;
+	 }
+	 ::-moz-placeholder {
+		color:    #E4A7EB;
+	 }
+	 :-ms-input-placeholder {
+		color:    #E4A7EB;
+	 }
+	input:focus{
+		outline: none;
+	}
+}
+.forgot{
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 29px;
+	color: #E4A7EB;
+	opacity: 0.8;
+	text-decoration: none;
+	margin: 2% 0 0 0.8%;
+	width: fit-content;
+}
+.forgot:hover{
+	color: rgb(0, 0, 126);
+}
+button{
+	height: 12%;
+	width: 40%;
+	margin: 0 auto;
+	margin-top: 5%;
+	background: #FFEF5A;
+	border-radius: 8px;
+	border: none;
+	h3{
+		width: 100%;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 29px;
+		color: #3A204F;
+		white-space: nowrap;
+	}
+}
+@media (max-width: 960px){
+	img{
+		width: 70%;
+	}
+	form{
+		padding: 7% 0;
+	}
+	button{
+		height: 11%;
+		h3{
+			font-size: 20px;
+		}
+	}
+}
+@media (max-width: 768px) {
+	img{
+		width: 80%;
+	}
+	form{
+		padding: 8% 0 2% 0;
+		input{
+			font-size: 25px;
+		}
+	}
+	.forgot{
+		font-size: 14px;
+		margin: 1% 0 0 0.8 ;
+	}
+	button{
+		h3{
+			font-size: 20px;
+		}
+	}
+}
+@media (max-width: 576px) {
+	img{
+		width: 85%;
+	}
+	form{
+		padding: 8% 0 2% 0;
+		input{
+			font-size: 22px;
+		}
+	}
+	.forgot{
+		font-size: 12px;
+		margin: 1% 0 0 0.8 ;
+	}
+	button{
+		width: 45%;
+		height: 9%;
+		h3{
+			font-size: 18px;
+		}
+	}
+}
+@media (max-width: 425px){
+	img{
+		width: 90%;
+	}
+	form{
+		padding: 10% 0 2% 0;
+		input{
+			font-size: 21px;
+		}
+	}
+	button{
+		width: 50%;
+	}
+}
+@media (max-width: 360px) {
+	img{
+		width: 100%;
+	}
+	.logo{
+		width: 100%;
+	}
+	form{
+		padding: 8% 0 2% 0;
+		input{
+			font-size: 18px;
+		}
+	}
+	button{
+		width: 60%;
+		height: 7%;
+		h3{
+			font-size: 18px;
+		}
+	}
+}

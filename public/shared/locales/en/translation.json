@@ -5,5 +5,12 @@
         "Cooperation": "Cooperation",
         "SignIn": "SignIn",
         "SignUp": "SignUp"
+  },
+    "sign_in":{
+        "email": "Email",
+        "password": "Password",
+        "forgot": "Forgot password?",
+        "sign_in": "Sign in"
+
     }
 }
