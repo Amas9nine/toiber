@@ -29,15 +29,15 @@ function Footer() {
             </div>
             <div className={css.FooterInfo}>
               <div className={css.LogoImg}>
-                <img src="./images/footer/logo.svg" alt="logo" />
+                <img className={css.LogoImg} src="./images/footer/logo.svg" alt="logo" />
               </div>
               <span>{t("footer.Info")}</span>
               <p>{t("footer.Social")}</p>
               <div className={css.Social}>
-                <img className={css.img} src="./images/footer/instagram.svg" alt="instagram" />
-                <img className={css.img} src="./images/footer/facebook.svg" alt="facebook" />
-                <img className={css.img} src="./images/footer/twitter.svg" alt="twitter" />
-                <img className={css.img} src="./images/footer/pinterest.svg" alt="pinterest" />
+                <img className={css.Image} src="./images/footer/instagram.svg" alt="instagram" />
+                <img className={css.Image} src="./images/footer/facebook.svg" alt="facebook" />
+                <img className={css.Image} src="./images/footer/twitter.svg" alt="twitter" />
+                <img className={css.Image} src="./images/footer/pinterest.svg" alt="pinterest" />
               </div>
             </div>
           </div>

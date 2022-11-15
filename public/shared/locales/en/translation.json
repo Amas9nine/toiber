@@ -19,5 +19,11 @@
         "Info":"This site is completely commercial and does not contain provocative and other information contrary to law",
         "Social":"SOCIAL NETWORKS",
         "Reserv":"All rights reserved"
+    },
+    "sign_in":{
+        "email": "Email",
+        "password": "Password",
+        "forgot": "Forgot password?",
+        "sign_in": "Sign in"
     }
 }
