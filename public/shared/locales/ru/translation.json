@@ -1,6 +1,11 @@
 {
-    "dashboard": "Доска",
-    "homepage": "Домащняя страница",
+    "header": {
+        "Perfomers": "Исполнители и услуги",
+        "Restorans": "Рестораны и заведения",
+        "Cooperation": "Сотрудничество",
+        "SignIn": "Вход",
+        "SignUp": "Зарегестрироваться"
+        },
     "footer": {
         "Help": "Помощь",
         "FAQs ": "FAQs",
