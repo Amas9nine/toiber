@@ -42,7 +42,7 @@
 	flex-direction: column;
 	justify-content: center;
 }
-img{
+.Logo{
 	width: 60%;
 	margin: 0 auto;
 }
@@ -116,7 +116,7 @@ button{
 	}
 }
 @media (max-width: 960px){
-	img{
+	.Logo{
 		width: 70%;
 	}
 	form{
@@ -130,7 +130,7 @@ button{
 	}
 }
 @media (max-width: 768px) {
-	img{
+	.Logo{
 		width: 80%;
 	}
 	form{
@@ -150,7 +150,7 @@ button{
 	}
 }
 @media (max-width: 576px) {
-	img{
+	.Logo{
 		width: 85%;
 	}
 	form{
@@ -172,7 +172,7 @@ button{
 	}
 }
 @media (max-width: 425px){
-	img{
+	.Logo{
 		width: 90%;
 	}
 	form{
@@ -186,7 +186,7 @@ button{
 	}
 }
 @media (max-width: 360px) {
-	img{
+	.Logo{
 		width: 100%;
 	}
 	.logo{

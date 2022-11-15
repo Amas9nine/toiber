@@ -1,10 +1,9 @@
-import { useTranslation } from "react-i18next";
+import Footer from "../components/footer/Footer";
 
 const HomePage = () => {
-  const { t } = useTranslation();
   return (
     <>
-      <h1>{t("homepage")}</h1>
+      <Footer />
     </>
   );
 };

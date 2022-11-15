@@ -12,7 +12,7 @@ function Sign_in() {
         <div className={scss.right_ornament}></div>
         <div className={scss.container}>
           <div className={scss.sign}>
-            <img src="./images/signIn/logo.svg" alt="logo" />
+            <img clasname={scss.Logo} src="./images/signIn/logo.svg" alt="logo" />
             <form>
               <input type="email" placeholder={t("sign_in.email")} />
               <input type="password" placeholder={t("sign_in.password")} />
