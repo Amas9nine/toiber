@@ -1,0 +1,199 @@
+.overlay {
+  background: #f3efff;
+  .header__content {
+    height: 15vh;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    .burger__menu {
+      cursor: pointer;
+      display: none;
+      background: none;
+      border: none;
+      img {
+        width: 40px;
+        transition: 0.1s ease-in-out;
+      }
+    }
+    .burger__menu:hover {
+      img {
+        width: 45px;
+      }
+    }
+    .left__content {
+      width: 55%;
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: space-between;
+      a{
+        img{
+          margin-bottom: 10px;
+        }
+      }
+      nav{
+        width: 75%;
+        display: flex;
+        justify-content: space-between;
+        a {
+          font-family: "Montserrat", sans-serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 13.2423px;
+          line-height: 16px;
+          text-decoration: #3a204f;
+          color: #3a204f;
+          text-decoration: none;
+          mix-blend-mode: normal;
+        }
+      }
+    }
+    .right__content {
+      height: 100%;
+      width: 45%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      a:first-child {
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13.2423px;
+        line-height: 16px;
+        text-decoration: #3a204f;
+        color: #3a204f;
+        text-decoration: none;
+        mix-blend-mode: normal;
+        border: 1px solid #3a204f;
+        padding: 10px 15px;
+        border-radius: 10px;
+        transition: ease-in-out .2s;
+
+      }
+      a:nth-child(2) {
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13.2423px;
+        line-height: 16px;
+        text-decoration: none;
+        color: #fdfdfd;
+        text-decoration: none;
+        mix-blend-mode: normal;
+        padding: 10px 15px;
+        margin-left: 20px;
+        background-color: #6c2382;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+.burger__menu__container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba($color: black, $alpha: 0.3);
+  transition: ease-in-out 0.3s;
+  .burger__menu__content {
+    width: 40%;
+    height: 100vh;
+    background-color: #6c2382;
+    transition: ease-in-out .2s;
+    div {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 0;
+      a {
+        width: fit-content;
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15.2423px;
+        line-height: 16px;
+        text-decoration: none;
+        color: #f3efff;
+        text-decoration: none;
+        mix-blend-mode: normal;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+      }
+    }
+    div:hover {
+      background-color: #7c2996;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .overlay {
+    .header__content {
+      .left__content {
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .overlay {
+    .header__content {
+      .left__content {
+        width: 90%;
+        a {
+          font-size: 12px;
+        }
+      }
+      .right__content {
+        a {
+          font-size: 12px !important;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 814px) {
+  .overlay {
+    .header__content {
+      justify-content: space-between;
+      width: 95%;
+      margin: 0 auto;
+      .burger__menu {
+        display: block;
+      }
+      .left__content{
+        
+        nav {
+          display: none;
+        }
+      }
+    }
+  }
+  .burger__menu__container{
+    .burger__menu__content{
+      width: 60%;
+      div{
+        a{
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 430px){
+  .overlay{
+    .header__content{
+      .left__content{
+        display: flex;
+        justify-content: flex-end ;
+      }
+      .right__content{
+        display: none;
+      }
+    }
+  }
+}

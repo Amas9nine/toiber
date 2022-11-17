@@ -1,4 +1,35 @@
 {
-    "dashboard": "Dashboard",
-    "homepage": "HomePage"
+    "header": {
+        "Perfomers": "Performers and services",
+        "Restorans": "Restaurants and establishments",
+        "Cooperation": "Cooperation",
+        "SignIn": "SignIn",
+        "SignUp": "SignUp"
+  },
+    "footer": {
+        "Help": "HELP",
+        "FAQs": "FAQs",
+        "Map": "Map",
+        "Recommendations": "Recommendations",
+        "Comments": "Comments",
+        "Benefits": "Benefits",
+        "Service": "SERVICES",
+        "Restaurants": "Restaurants",
+        "Decor": "Decoration",
+        "Filming": "Filmings",
+        "Stage": "Estrade",
+        "Leading": "Leading",
+        "Wardrobe": "Wardrobe",
+        "Tuple": "Tuple",
+        "Info":"This site is completely commercial and does not contain provocative and other information contrary to law",
+        "Social":"SOCIAL NETWORKS",
+        "Reserv":"All rights reserved"
+    },
+    "sign_in":{
+        "email": "Email",
+        "password": "Password",
+        "forgot": "Forgot password?",
+        "sign_in": "Sign in"
+
+    }
 }
