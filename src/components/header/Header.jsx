@@ -23,9 +23,9 @@ export default function Header() {
                 <img src="./images/header/Logo.svg" alt="LogoImage" />
               </Link>
               <nav>
-                <Link to="/PerfomersAndService">{t("header.Perfomers")}</Link>
-                <Link to="/RestaurantsAndEstablishments">{t("header.Restorans")}</Link>
-                <Link to="/Cooperation">{t("header.Cooperation")}</Link>
+                <Link to="/perfomers-and-service">{t("header.Perfomers")}</Link>
+                <Link to="/restaurants-and-establishments">{t("header.Restorans")}</Link>
+                <Link to="/cooperation">{t("header.Cooperation")}</Link>
               </nav>
             </div>
             <div className={scss.right__content}>
@@ -38,15 +38,15 @@ export default function Header() {
           <div onClick={() => setOpenBurgerMenu(false)} className={scss.burger__menu__container}>
             <div onClick={(e) => e.stopPropagation()} className={scss.burger__menu__content}>
               <div>
-                <Link to="/PerfomersAndService">{t("header.Perfomers")}</Link>
+                <Link to="/perfomers-and-service">{t("header.Perfomers")}</Link>
               </div>
 
               <div>
-                <Link to="/RestaurantsAndEstablishments">{t("header.Restorans")}</Link>
+                <Link to="/restaurants-and-establishments">{t("header.Restorans")}</Link>
               </div>
 
               <div>
-                <Link to="/Cooperation">{t("header.Cooperation")}</Link>
+                <Link to="/cooperation">{t("header.Cooperation")}</Link>
               </div>
               <div>
                 <Link to="/sign_up">{t("header.SignUp")}</Link>
