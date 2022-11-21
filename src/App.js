@@ -10,8 +10,8 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/sign_in" element={<Sign_in />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/sign_in" element={<PublicRoute Component={Sign_in} />} />
+        <Route path="/dashboard" element={<PrivateRoute Component={Dashboard} />} />
       </Routes>
     </div>
   );
