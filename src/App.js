@@ -2,7 +2,7 @@ import "./App.scss";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Dashboard from "./pages/Dashboard";
-// import { PrivateRoute, PublicRoute } from "./routes/routes";
+import { PrivateRoute, PublicRoute } from "./routes/routes";
 import Sign_in from "./pages/Sign_in/Sign_in";
 
 function App() {
