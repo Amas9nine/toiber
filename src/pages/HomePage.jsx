@@ -1,12 +1,12 @@
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
-import SliderBlock from "../components/SliderBlock/SliderBlock";
+import SearchBlock from "../components/SearchBlock/SearchBlock";
 
 const HomePage = () => {
   return (
     <>
       <Header />
-      <SliderBlock />
+      <SearchBlock />
       <Footer />
     </>
   );
