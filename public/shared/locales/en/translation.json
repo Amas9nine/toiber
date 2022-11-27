@@ -5,7 +5,7 @@
         "Cooperation": "Cooperation",
         "SignIn": "SignIn",
         "SignUp": "SignUp"
-  },
+    },
     "footer": {
         "Help": "HELP",
         "FAQs": "FAQs",
@@ -21,15 +21,75 @@
         "Leading": "Leading",
         "Wardrobe": "Wardrobe",
         "Tuple": "Tuple",
-        "Info":"This site is completely commercial and does not contain provocative and other information contrary to law",
-        "Social":"SOCIAL NETWORKS",
-        "Reserv":"All rights reserved"
+        "Info": "This site is completely commercial and does not contain provocative and other information contrary to law",
+        "Social": "SOCIAL NETWORKS",
+        "Reserv": "All rights reserved"
     },
-    "sign_in":{
+    "sign_in": {
         "email": "Email",
         "password": "Password",
         "forgot": "Forgot password?",
         "sign_in": "Sign in"
-
+    },
+   "search_block": {
+        "all": "Everything you need is here!",
+        "clik": "Organising a celebration with a few clicks",
+        "search": "Search",
+        "restor": {
+            "restor": "Restaurants",
+            "kafe": "Cafe",
+            "chai": "Tea-House",
+            "karaoke": "Karaoke bar",
+            "child": "Children's cafes",
+            "banket": "Banquet hall"
+        },
+        "film": {
+            "film": "Filming",
+            "video": "Video shooting",
+            "photo": "Photo shoot",
+            "slide": "Slideshow",
+            "aero": "Aerial survey",
+            "laif": "Life shooting"
+        },
+        "decor": {
+            "decor": "Decorating",
+            "flor": "Floristics",
+            "stend": "Stands",
+            "sweet": "Confectionery",
+            "salute": "Fireworks",
+            "drap": "Drapery",
+            "garland": "Garlands",
+            "sets": "Thematic sets",
+            "presents": "Gifts for guests",
+            "candles": "Candle"
+        },
+        "stage": {
+            "stage": "Stage",
+            "dancers": "Dancers",
+            "animator": "Animators",
+            "magician": "Magicians",
+            "singer": "Singers",
+            "celebrity": "Celebrity"
+        },
+        "leading": {
+            "leading": "Leading",
+            "topical": "Relevant",
+            "bloger": "Bloggers",
+            "toastmaster": "Toastmaster"
+        },
+        "wardrobe": {
+            "wardrobe": "Wardrobe",
+            "weddres": "Wedding dresses",
+            "temcostume": "Themed costumes",
+            "costume": "Costumes",
+            "dress": "Dress"
+        },
+        "cortage": {
+            "cortage": "Cartege",
+            "limousins": "Limousine",
+            "horse": "Horse",
+            "bike": "Motorbikes",
+            "boats": "Boat"
+        }
     }
 }

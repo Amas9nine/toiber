@@ -3,10 +3,10 @@ import Slider from "react-slick";
 import scss from "./SearchBlock.module.scss";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-// import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 function SearchBlock() {
-  // const { t } = useTranslation();
+  const { t } = useTranslation();
   const [restor, setRestor] = useState(false);
   const [film, setFilm] = useState(false);
   const [decor, setDecor] = useState(false);
@@ -33,7 +33,7 @@ function SearchBlock() {
           <div className={scss.image_cont}>
             <div className={scss.all_need}>
               <img src="./images/slide/3.png" alt="#" />
-              <h1>Всё, что вам нужно, уже здесь!</h1>
+              <h1>{t("search_block.all")}</h1>
             </div>
             <Slider {...settings}>
               <img src="./images/slide/1.jpg" alt="photo" />
@@ -41,11 +41,14 @@ function SearchBlock() {
             </Slider>
           </div>
           <nav className={scss.navbar}>
+            <div className={scss.clik}>
+              <h2>{t("search_block.clik")}</h2>
+            </div>
             {active ? (
               <div className={scss.nav_form}>
                 <form onSubmit={editSubmit}>
                   <input className={scss.input_search} type="text" placeholder="Поиск..." />
-                  <button>Найти</button>
+                  <button>{t("search_block.search")}</button>
                   <button onClick={() => setActive(!active)} className={scss.back_arrow}>
                     <span></span>
                   </button>
@@ -75,24 +78,24 @@ function SearchBlock() {
                       }
                       className={scss.btn}
                     >
-                      <h3>Рестораны</h3>
+                      <h3>{t("search_block.restor.restor")}</h3>
                       <span className={restor ? scss.down : scss.up}></span>
                     </div>
                     <ul className={restor ? scss.list : scss.active}>
                       <li>
-                        <Link to="#">Кафе</Link>
+                        <Link to="#">{t("search_block.restor.kafe")}</Link>
                       </li>
                       <li>
-                        <Link to="#">Чайхана</Link>
+                        <Link to="#">{t("search_block.restor.chai")}</Link>
                       </li>
                       <li>
-                        <Link to="#">Караоке бар</Link>
+                        <Link to="#">{t("search_block.restor.karaoke")}</Link>
                       </li>
                       <li>
-                        <Link to="#">Детские кафе</Link>
+                        <Link to="#">{t("search_block.restor.child")}</Link>
                       </li>
                       <li>
-                        <Link to="#">Банкетный зал</Link>
+                        <Link to="#">{t("search_block.restor.banket")}</Link>
                       </li>
                     </ul>
                   </div>
@@ -111,24 +114,24 @@ function SearchBlock() {
                       }
                       className={scss.btn}
                     >
-                      <h3>Съемки</h3>
+                      <h3>{t("search_block.film.film")}</h3>
                       <span className={film ? scss.down : scss.up}></span>
                     </div>
                     <ul className={film ? scss.list : scss.active}>
                       <li>
-                        <Link to="#">Видео съемка</Link>
+                        <Link to="#">{t("search_block.film.video")}</Link>
                       </li>
                       <li>
-                        <Link to="#">Фото съемка</Link>
+                        <Link to="#">{t("search_block.film.photo")}</Link>
                       </li>
                       <li>
-                        <Link to="#">Слайд-шоу</Link>
+                        <Link to="#">{t("search_block.film.slide")}</Link>
                       </li>
                       <li>
-                        <Link to="#">Аэро съемка</Link>
+                        <Link to="#">{t("search_block.film.aero")}</Link>
                       </li>
                       <li>
-                        <Link to="#">Лайф-съемка</Link>
+                        <Link to="#">{t("search_block.film.laif")}</Link>
                       </li>
                     </ul>
                   </div>
@@ -147,36 +150,36 @@ function SearchBlock() {
                       }
                       className={scss.btn}
                     >
-                      <h3>Оформление</h3>
+                      <h3>{t("search_block.decor.decor")}</h3>
                       <span className={decor ? scss.down : scss.up}></span>
                     </div>
                     <ul className={decor ? scss.list : scss.active}>
                       <li>
-                        <Link to="#">Флористика</Link>
+                        <Link to="#">{t("search_block.decor.flor")}</Link>
                       </li>
                       <li>
-                        <Link to="#">Стенды</Link>
+                        <Link to="#">{t("search_block.decor.stend")}</Link>
                       </li>
                       <li>
-                        <Link to="#">Кондитерные изделия</Link>
+                        <Link to="#">{t("search_block.decor.sweet")}</Link>
                       </li>
                       <li>
-                        <Link to="#">Салюты</Link>
+                        <Link to="#">{t("search_block.decor.salute")}</Link>
                       </li>
                       <li>
-                        <Link to="#">Драпировка</Link>
+                        <Link to="#">{t("search_block.decor.drap")}</Link>
                       </li>
                       <li>
-                        <Link to="#">Гирлянды</Link>
+                        <Link to="#">{t("search_block.decor.garland")}</Link>
                       </li>
                       <li>
-                        <Link to="#">Тематические наборы</Link>
+                        <Link to="#">{t("search_block.decor.sets")}</Link>
                       </li>
                       <li>
-                        <Link to="#">Подарки гостям</Link>
+                        <Link to="#">{t("search_block.decor.presents")}</Link>
                       </li>
                       <li>
-                        <Link to="#">Свечи</Link>
+                        <Link to="#">{t("search_block.decor.candles")}</Link>
                       </li>
                     </ul>
                   </div>
@@ -195,24 +198,24 @@ function SearchBlock() {
                       }
                       className={scss.btn}
                     >
-                      <h3>Эстрада</h3>
+                      <h3>{t("search_block.stage.stage")}</h3>
                       <span className={stage ? scss.down : scss.up}></span>
                     </div>
                     <ul className={stage ? scss.list : scss.active}>
                       <li>
-                        <Link to="#">Танцоры</Link>
+                        <Link to="#">{t("search_block.stage.dancers")}</Link>
                       </li>
                       <li>
-                        <Link to="#">Аниматоры</Link>
+                        <Link to="#">{t("search_block.stage.animator")}</Link>
                       </li>
                       <li>
-                        <Link to="#">Фокусники</Link>
+                        <Link to="#">{t("search_block.stage.magician")}</Link>
                       </li>
                       <li>
-                        <Link to="#">Певцы</Link>
+                        <Link to="#">{t("search_block.stage.singer")}</Link>
                       </li>
                       <li>
-                        <Link to="#">Известные</Link>
+                        <Link to="#">{t("search_block.stage.celebrity")}</Link>
                       </li>
                     </ul>
                   </div>
@@ -231,18 +234,18 @@ function SearchBlock() {
                       }
                       className={scss.btn}
                     >
-                      <h3>Ведущие</h3>
+                      <h3>{t("search_block.leading.leading")}</h3>
                       <span className={leading ? scss.down : scss.up}></span>
                     </div>
                     <ul className={leading ? scss.list : scss.active}>
                       <li>
-                        <Link to="#">Актуальные</Link>
+                        <Link to="#">{t("search_block.leading.topical")}</Link>
                       </li>
                       <li>
-                        <Link to="#">Блогеры</Link>
+                        <Link to="#">{t("search_block.leading.bloger")}</Link>
                       </li>
                       <li>
-                        <Link to="#">Тамада</Link>
+                        <Link to="#">{t("search_block.leading.toastmaster")}</Link>
                       </li>
                     </ul>
                   </div>
@@ -261,21 +264,21 @@ function SearchBlock() {
                       }
                       className={scss.btn}
                     >
-                      <h3>Гардероб</h3>
+                      <h3>{t("search_block.wardrobe.wardrobe")}</h3>
                       <span className={wardrobe ? scss.down : scss.up}></span>
                     </div>
                     <ul className={wardrobe ? scss.list : scss.active}>
                       <li>
-                        <Link to="#">Свадебные наряды</Link>
+                        <Link to="#">{t("search_block.wardrobe.weddres")}</Link>
                       </li>
                       <li>
-                        <Link to="#">Тематические костюмы</Link>
+                        <Link to="#">{t("search_block.wardrobe.temcostume")}</Link>
                       </li>
                       <li>
-                        <Link to="#">Костюмы</Link>
+                        <Link to="#">{t("search_block.wardrobe.costume")}</Link>
                       </li>
                       <li>
-                        <Link to="#">Платья</Link>
+                        <Link to="#">{t("search_block.wardrobe.dress")}</Link>
                       </li>
                     </ul>
                   </div>
@@ -294,21 +297,21 @@ function SearchBlock() {
                       }
                       className={scss.btn}
                     >
-                      <h3>Картеж</h3>
+                      <h3>{t("search_block.cortage.cortage")}</h3>
                       <span className={cortage ? scss.down : scss.up}></span>
                     </div>
                     <ul className={cortage ? scss.list : scss.active}>
                       <li>
-                        <Link to="#">Лимузин</Link>
+                        <Link to="#">{t("search_block.cortage.limousins")}</Link>
                       </li>
                       <li>
-                        <Link to="#">Лошади</Link>
+                        <Link to="#">{t("search_block.cortage.horse")}</Link>
                       </li>
                       <li>
-                        <Link to="#">Мотоциклы</Link>
+                        <Link to="#">{t("search_block.cortage.bike")}</Link>
                       </li>
                       <li>
-                        <Link to="#">Лодки</Link>
+                        <Link to="#">{t("search_block.cortage.boats")}</Link>
                       </li>
                     </ul>
                   </div>
