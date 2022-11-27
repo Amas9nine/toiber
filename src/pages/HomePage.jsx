@@ -1,12 +1,12 @@
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
-import SliderBlock from "../components/SliderBlock/SliderBlock";
+import QcodeBlock from "../components/qrcode/QcodeBlock";
 
 const HomePage = () => {
   return (
     <>
       <Header />
-      <SliderBlock />
+      <QcodeBlock />
       <Footer />
     </>
   );
