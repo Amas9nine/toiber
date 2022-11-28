@@ -1,9 +1,9 @@
 import React from "react";
-import Slider from "react-slick";
-import scss from "./SearchBlock.module.scss";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import Slider from "react-slick";
+import scss from "./SearchBlock.module.scss";
 
 function SearchBlock() {
   const { t } = useTranslation();
@@ -32,12 +32,12 @@ function SearchBlock() {
         <div className={scss.container}>
           <div className={scss.image_cont}>
             <div className={scss.all_need}>
-              <img src="./images/slide/3.png" alt="#" />
+              <img src="./images/slide/3.png" alt="backgraund_images" />
               <h1>{t("search_block.all")}</h1>
             </div>
             <Slider {...settings}>
-              <img src="./images/slide/1.jpg" alt="photo" />
-              <img src="./images/slide/2.jpg" alt="photo" />
+              <img src="./images/slide/1.jpg" alt="wedding_photo" />
+              <img src="./images/slide/2.jpg" alt="holiday_photo" />
             </Slider>
           </div>
           <nav className={scss.navbar}>
@@ -47,8 +47,12 @@ function SearchBlock() {
             {active ? (
               <div className={scss.nav_form}>
                 <form onSubmit={editSubmit}>
-                  <input className={scss.input_search} type="text" placeholder="Поиск..." />
-                  <button>{t("search_block.search")}</button>
+                  <input
+                    className={scss.input_search}
+                    type="text"
+                    placeholder={t("search_block.search")}
+                  />
+                  <button>{t("search_block.find")}</button>
                   <button onClick={() => setActive(!active)} className={scss.back_arrow}>
                     <span></span>
                   </button>
@@ -83,19 +87,19 @@ function SearchBlock() {
                     </div>
                     <ul className={restor ? scss.list : scss.active}>
                       <li>
-                        <Link to="#">{t("search_block.restor.kafe")}</Link>
+                        <Link to="/kafe">{t("search_block.restor.kafe")}</Link>
                       </li>
                       <li>
-                        <Link to="#">{t("search_block.restor.chai")}</Link>
+                        <Link to="/tea-house">{t("search_block.restor.chai")}</Link>
                       </li>
                       <li>
-                        <Link to="#">{t("search_block.restor.karaoke")}</Link>
+                        <Link to="/karaoke">{t("search_block.restor.karaoke")}</Link>
                       </li>
                       <li>
-                        <Link to="#">{t("search_block.restor.child")}</Link>
+                        <Link to="/children's_cafes">{t("search_block.restor.child")}</Link>
                       </li>
                       <li>
-                        <Link to="#">{t("search_block.restor.banket")}</Link>
+                        <Link to="/banquet_hall">{t("search_block.restor.banket")}</Link>
                       </li>
                     </ul>
                   </div>
@@ -119,19 +123,19 @@ function SearchBlock() {
                     </div>
                     <ul className={film ? scss.list : scss.active}>
                       <li>
-                        <Link to="#">{t("search_block.film.video")}</Link>
+                        <Link to="/video_shooting">{t("search_block.film.video")}</Link>
                       </li>
                       <li>
-                        <Link to="#">{t("search_block.film.photo")}</Link>
+                        <Link to="/photo_shooting">{t("search_block.film.photo")}</Link>
                       </li>
                       <li>
-                        <Link to="#">{t("search_block.film.slide")}</Link>
+                        <Link to="/slideshow">{t("search_block.film.slide")}</Link>
                       </li>
                       <li>
-                        <Link to="#">{t("search_block.film.aero")}</Link>
+                        <Link to="/aerial_survey">{t("search_block.film.aero")}</Link>
                       </li>
                       <li>
-                        <Link to="#">{t("search_block.film.laif")}</Link>
+                        <Link to="life_shooting">{t("search_block.film.laif")}</Link>
                       </li>
                     </ul>
                   </div>
@@ -155,31 +159,31 @@ function SearchBlock() {
                     </div>
                     <ul className={decor ? scss.list : scss.active}>
                       <li>
-                        <Link to="#">{t("search_block.decor.flor")}</Link>
+                        <Link to="/floristics">{t("search_block.decor.flor")}</Link>
                       </li>
                       <li>
-                        <Link to="#">{t("search_block.decor.stend")}</Link>
+                        <Link to="/stands">{t("search_block.decor.stend")}</Link>
                       </li>
                       <li>
-                        <Link to="#">{t("search_block.decor.sweet")}</Link>
+                        <Link to="/confectionery">{t("search_block.decor.sweet")}</Link>
                       </li>
                       <li>
-                        <Link to="#">{t("search_block.decor.salute")}</Link>
+                        <Link to="/fireworks">{t("search_block.decor.salute")}</Link>
                       </li>
                       <li>
-                        <Link to="#">{t("search_block.decor.drap")}</Link>
+                        <Link to="/drapery">{t("search_block.decor.drap")}</Link>
                       </li>
                       <li>
-                        <Link to="#">{t("search_block.decor.garland")}</Link>
+                        <Link to="/garlands">{t("search_block.decor.garland")}</Link>
                       </li>
                       <li>
-                        <Link to="#">{t("search_block.decor.sets")}</Link>
+                        <Link to="/thematic_sets">{t("search_block.decor.sets")}</Link>
                       </li>
                       <li>
-                        <Link to="#">{t("search_block.decor.presents")}</Link>
+                        <Link to="/gift_for_guests">{t("search_block.decor.presents")}</Link>
                       </li>
                       <li>
-                        <Link to="#">{t("search_block.decor.candles")}</Link>
+                        <Link to="/candle">{t("search_block.decor.candles")}</Link>
                       </li>
                     </ul>
                   </div>
@@ -203,19 +207,19 @@ function SearchBlock() {
                     </div>
                     <ul className={stage ? scss.list : scss.active}>
                       <li>
-                        <Link to="#">{t("search_block.stage.dancers")}</Link>
+                        <Link to="/dancers">{t("search_block.stage.dancers")}</Link>
                       </li>
                       <li>
-                        <Link to="#">{t("search_block.stage.animator")}</Link>
+                        <Link to="/animators">{t("search_block.stage.animator")}</Link>
                       </li>
                       <li>
-                        <Link to="#">{t("search_block.stage.magician")}</Link>
+                        <Link to="/magicians">{t("search_block.stage.magician")}</Link>
                       </li>
                       <li>
-                        <Link to="#">{t("search_block.stage.singer")}</Link>
+                        <Link to="/singers">{t("search_block.stage.singer")}</Link>
                       </li>
                       <li>
-                        <Link to="#">{t("search_block.stage.celebrity")}</Link>
+                        <Link to="/celebrity">{t("search_block.stage.celebrity")}</Link>
                       </li>
                     </ul>
                   </div>
@@ -239,13 +243,13 @@ function SearchBlock() {
                     </div>
                     <ul className={leading ? scss.list : scss.active}>
                       <li>
-                        <Link to="#">{t("search_block.leading.topical")}</Link>
+                        <Link to="/relevant">{t("search_block.leading.topical")}</Link>
                       </li>
                       <li>
-                        <Link to="#">{t("search_block.leading.bloger")}</Link>
+                        <Link to="/bloggers">{t("search_block.leading.bloger")}</Link>
                       </li>
                       <li>
-                        <Link to="#">{t("search_block.leading.toastmaster")}</Link>
+                        <Link to="/toastmaster">{t("search_block.leading.toastmaster")}</Link>
                       </li>
                     </ul>
                   </div>
@@ -269,16 +273,16 @@ function SearchBlock() {
                     </div>
                     <ul className={wardrobe ? scss.list : scss.active}>
                       <li>
-                        <Link to="#">{t("search_block.wardrobe.weddres")}</Link>
+                        <Link to="/wedding_dresses">{t("search_block.wardrobe.weddres")}</Link>
                       </li>
                       <li>
-                        <Link to="#">{t("search_block.wardrobe.temcostume")}</Link>
+                        <Link to="/themed_costumes">{t("search_block.wardrobe.temcostume")}</Link>
                       </li>
                       <li>
-                        <Link to="#">{t("search_block.wardrobe.costume")}</Link>
+                        <Link to="/costumes">{t("search_block.wardrobe.costume")}</Link>
                       </li>
                       <li>
-                        <Link to="#">{t("search_block.wardrobe.dress")}</Link>
+                        <Link to="/dress">{t("search_block.wardrobe.dress")}</Link>
                       </li>
                     </ul>
                   </div>
@@ -302,22 +306,22 @@ function SearchBlock() {
                     </div>
                     <ul className={cortage ? scss.list : scss.active}>
                       <li>
-                        <Link to="#">{t("search_block.cortage.limousins")}</Link>
+                        <Link to="/limousine">{t("search_block.cortage.limousins")}</Link>
                       </li>
                       <li>
-                        <Link to="#">{t("search_block.cortage.horse")}</Link>
+                        <Link to="/horse">{t("search_block.cortage.horse")}</Link>
                       </li>
                       <li>
-                        <Link to="#">{t("search_block.cortage.bike")}</Link>
+                        <Link to="/motorbikes">{t("search_block.cortage.bike")}</Link>
                       </li>
                       <li>
-                        <Link to="#">{t("search_block.cortage.boats")}</Link>
+                        <Link to="/boat">{t("search_block.cortage.boats")}</Link>
                       </li>
                     </ul>
                   </div>
                 </div>
                 <div onClick={() => setActive(!active)} className={scss.search}>
-                  <img src="./images/slide/search.svg" alt="search" />
+                  <img src="./images/slide/search.svg" alt="search_icon" />
                 </div>
               </div>
             )}

@@ -46,8 +46,8 @@ section {
 
 		.clik{
 			position: absolute;
-			top: -18%;
-			height: 35%;
+			top: -20px;
+			height: 30px;
 			width: 60%;
 			border-top-right-radius: 15px;
 			border-top-left-radius: 15px;
@@ -201,7 +201,6 @@ section {
 						margin-top: 1%;
 						margin-left: -2%;
 						list-style-type: none;
-						border: 1px solid black;
 						width: 17%;
 						background: #F5F2F2;
 						box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -682,7 +681,7 @@ section {
 		.navbar {
 			.clik{
 				width: 90%;
-				top: -33%;
+				top: -27px;
 				h2{
 					font-size: 14px;
 				}
@@ -734,7 +733,6 @@ section {
 			border-top-right-radius: 0;
 			.clik{
 				width: 100%;
-				// border-radius: 0;
 			}
 			.nav_form {
 				form {
