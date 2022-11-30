@@ -1,0 +1,12 @@
+{
+  "form": {
+    "email": "Email",
+    "password": "Password"
+  },
+  "Link": {
+    "forgot": "Forgot password?"
+  },
+  "button": {
+    "sign_in": "Sign in"
+  }
+}
