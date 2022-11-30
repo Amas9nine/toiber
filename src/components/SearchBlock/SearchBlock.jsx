@@ -6,14 +6,16 @@ import Slider from "react-slick";
 import scss from "./SearchBlock.module.scss";
 
 function SearchBlock() {
-  const { t } = useTranslation();
-  const [restor, setRestor] = useState(false);
-  const [film, setFilm] = useState(false);
-  const [decor, setDecor] = useState(false);
-  const [stage, setStage] = useState(false);
-  const [leading, setLeading] = useState(false);
-  const [wardrobe, setWardrobe] = useState(false);
-  const [cortage, setCortage] = useState(false);
+  const { t } = useTranslation(["SearchBlock"]);
+  const [open, setOpen] = useState({
+    restor: false,
+    film: false,
+    decor: false,
+    stage: false,
+    leading: false,
+    wardrobe: false,
+    cortage: false
+  });
   const [active, setActive] = useState(false);
   const [burger, setBurger] = useState(false);
 
@@ -70,22 +72,23 @@ function SearchBlock() {
                   <div className={scss.dropdown}>
                     <div
                       onClick={() =>
-                        setRestor(() => {
-                          setRestor(!restor);
-                          setFilm(false);
-                          setDecor(false);
-                          setStage(false);
-                          setLeading(false);
-                          setWardrobe(false);
-                          setCortage(false);
+                        setOpen({
+                          ...open,
+                          restor: !open.restor,
+                          film: false,
+                          decor: false,
+                          stage: false,
+                          leading: false,
+                          wardrobe: false,
+                          cortage: false
                         })
                       }
                       className={scss.btn}
                     >
                       <h3>{t("search_block.restor.restor")}</h3>
-                      <span className={restor ? scss.down : scss.up}></span>
+                      <span className={open.restor ? scss.down : scss.up}></span>
                     </div>
-                    <ul className={restor ? scss.list : scss.active}>
+                    <ul className={open.restor ? scss.list : scss.active}>
                       <li>
                         <Link to="/kafe">{t("search_block.restor.kafe")}</Link>
                       </li>
@@ -106,22 +109,23 @@ function SearchBlock() {
                   <div className={scss.dropdown}>
                     <div
                       onClick={() =>
-                        setFilm(() => {
-                          setRestor(false);
-                          setFilm(!film);
-                          setDecor(false);
-                          setStage(false);
-                          setLeading(false);
-                          setWardrobe(false);
-                          setCortage(false);
+                        setOpen({
+                          ...open,
+                          restor: false,
+                          film: !open.film,
+                          decor: false,
+                          stage: false,
+                          leading: false,
+                          wardrobe: false,
+                          cortage: false
                         })
                       }
                       className={scss.btn}
                     >
                       <h3>{t("search_block.film.film")}</h3>
-                      <span className={film ? scss.down : scss.up}></span>
+                      <span className={open.film ? scss.down : scss.up}></span>
                     </div>
-                    <ul className={film ? scss.list : scss.active}>
+                    <ul className={open.film ? scss.list : scss.active}>
                       <li>
                         <Link to="/video_shooting">{t("search_block.film.video")}</Link>
                       </li>
@@ -142,22 +146,23 @@ function SearchBlock() {
                   <div className={scss.dropdown}>
                     <div
                       onClick={() =>
-                        setDecor(() => {
-                          setRestor(false);
-                          setFilm(false);
-                          setDecor(!decor);
-                          setStage(false);
-                          setLeading(false);
-                          setWardrobe(false);
-                          setCortage(false);
+                        setOpen({
+                          ...open,
+                          restor: false,
+                          film: false,
+                          decor: !open.decor,
+                          stage: false,
+                          leading: false,
+                          wardrobe: false,
+                          cortage: false
                         })
                       }
                       className={scss.btn}
                     >
                       <h3>{t("search_block.decor.decor")}</h3>
-                      <span className={decor ? scss.down : scss.up}></span>
+                      <span className={open.decor ? scss.down : scss.up}></span>
                     </div>
-                    <ul className={decor ? scss.list : scss.active}>
+                    <ul className={open.decor ? scss.list : scss.active}>
                       <li>
                         <Link to="/floristics">{t("search_block.decor.flor")}</Link>
                       </li>
@@ -190,22 +195,23 @@ function SearchBlock() {
                   <div className={scss.dropdown}>
                     <div
                       onClick={() =>
-                        setStage(() => {
-                          setRestor(false);
-                          setFilm(false);
-                          setDecor(false);
-                          setStage(!stage);
-                          setLeading(false);
-                          setWardrobe(false);
-                          setCortage(false);
+                        setOpen({
+                          ...open,
+                          restor: false,
+                          film: false,
+                          decor: false,
+                          stage: !open.stage,
+                          leading: false,
+                          wardrobe: false,
+                          cortage: false
                         })
                       }
                       className={scss.btn}
                     >
                       <h3>{t("search_block.stage.stage")}</h3>
-                      <span className={stage ? scss.down : scss.up}></span>
+                      <span className={open.stage ? scss.down : scss.up}></span>
                     </div>
-                    <ul className={stage ? scss.list : scss.active}>
+                    <ul className={open.stage ? scss.list : scss.active}>
                       <li>
                         <Link to="/dancers">{t("search_block.stage.dancers")}</Link>
                       </li>
@@ -226,22 +232,23 @@ function SearchBlock() {
                   <div className={scss.dropdown}>
                     <div
                       onClick={() =>
-                        setLeading(() => {
-                          setRestor(false);
-                          setFilm(false);
-                          setDecor(false);
-                          setStage(false);
-                          setLeading(!leading);
-                          setWardrobe(false);
-                          setCortage(false);
+                        setOpen({
+                          ...open,
+                          restor: false,
+                          film: false,
+                          decor: false,
+                          stage: false,
+                          leading: !open.leading,
+                          wardrobe: false,
+                          cortage: false
                         })
                       }
                       className={scss.btn}
                     >
                       <h3>{t("search_block.leading.leading")}</h3>
-                      <span className={leading ? scss.down : scss.up}></span>
+                      <span className={open.leading ? scss.down : scss.up}></span>
                     </div>
-                    <ul className={leading ? scss.list : scss.active}>
+                    <ul className={open.leading ? scss.list : scss.active}>
                       <li>
                         <Link to="/relevant">{t("search_block.leading.topical")}</Link>
                       </li>
@@ -256,22 +263,23 @@ function SearchBlock() {
                   <div className={scss.dropdown}>
                     <div
                       onClick={() =>
-                        setWardrobe(() => {
-                          setRestor(false);
-                          setFilm(false);
-                          setDecor(false);
-                          setStage(false);
-                          setLeading(false);
-                          setWardrobe(!wardrobe);
-                          setCortage(false);
+                        setOpen({
+                          ...open,
+                          restor: false,
+                          film: false,
+                          decor: false,
+                          stage: false,
+                          leading: false,
+                          wardrobe: !open.wardrobe,
+                          cortage: false
                         })
                       }
                       className={scss.btn}
                     >
                       <h3>{t("search_block.wardrobe.wardrobe")}</h3>
-                      <span className={wardrobe ? scss.down : scss.up}></span>
+                      <span className={open.wardrobe ? scss.down : scss.up}></span>
                     </div>
-                    <ul className={wardrobe ? scss.list : scss.active}>
+                    <ul className={open.wardrobe ? scss.list : scss.active}>
                       <li>
                         <Link to="/wedding_dresses">{t("search_block.wardrobe.weddres")}</Link>
                       </li>
@@ -289,22 +297,23 @@ function SearchBlock() {
                   <div className={scss.dropdown}>
                     <div
                       onClick={() =>
-                        setCortage(() => {
-                          setRestor(false);
-                          setFilm(false);
-                          setDecor(false);
-                          setStage(false);
-                          setLeading(false);
-                          setWardrobe(false);
-                          setCortage(!cortage);
+                        setOpen({
+                          ...open,
+                          restor: false,
+                          film: false,
+                          decor: false,
+                          stage: false,
+                          leading: false,
+                          wardrobe: false,
+                          cortage: !open.cortage
                         })
                       }
                       className={scss.btn}
                     >
                       <h3>{t("search_block.cortage.cortage")}</h3>
-                      <span className={cortage ? scss.down : scss.up}></span>
+                      <span className={open.cortage ? scss.down : scss.up}></span>
                     </div>
-                    <ul className={cortage ? scss.list : scss.active}>
+                    <ul className={open.cortage ? scss.list : scss.active}>
                       <li>
                         <Link to="/limousine">{t("search_block.cortage.limousins")}</Link>
                       </li>
