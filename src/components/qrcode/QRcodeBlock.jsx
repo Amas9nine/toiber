@@ -1,7 +1,25 @@
 import scss from "./qcode.module.scss";
-import dataContent from "./data/dataContent";
+import { db } from "../../firebase";
+import { useState } from "react";
+import { useEffect } from "react";
 
 function QRcodeBlock() {
+  const [card, setCard] = useState([]);
+  useEffect(() => {
+    db.collection("dataContent")
+      .orderBy("id", "desc")
+      .get()
+      .then((querySnapshot) => {
+        const items = [];
+        querySnapshot.forEach((doc) => {
+          items.push({
+            ...doc.data(),
+            id: doc.id
+          });
+        });
+        setCard(items);
+      });
+  }, []);
   return (
     <>
       <div className={scss.container}>
@@ -48,7 +66,7 @@ function QRcodeBlock() {
           <div className={scss.section}>
             <div>ПРЕИМУЩЕСТВА</div>
             <div className={scss.text}>
-              {dataContent.map((item) => (
+              {card.map((item) => (
                 <div>
                   <div>
                     <img src={item.img} alt="content" />
@@ -58,7 +76,7 @@ function QRcodeBlock() {
               ))}
             </div>
             <div className={scss.text__DropDown}>
-              {dataContent.map((item) => (
+              {card.map((item) => (
                 <div>
                   <div>
                     <img src={item.img} alt="content" />
