@@ -1,8 +1,7 @@
-// import QRCode from "react-qr-code";
 import scss from "./qcode.module.scss";
 import dataContent from "./data/dataContent";
 
-function QcodeBlock() {
+function QRcodeBlock() {
   return (
     <>
       <div className={scss.container}>
@@ -24,20 +23,23 @@ function QcodeBlock() {
                 </div>
               </div>
               <div className={scss.qr__block}>
-                {/* 
-                1) ЭТО ОПЦИЯ ТОЖЕ ЕСТЬ НО НЕ РАБОАТЕТ ПРИ НАВЕДЕНИИ СКАНЕРА НА ЭКРАН
-                2) А ВОТ ВТОРАЯ ВЕРСИЯ С IMG РАБОТАЕТ НА УРА !
-                 <QRCode
-                  className={scss.qr__code}
-                  value="http://qrcoder.ru/code/?
-                  https%3A%2F%2Fabout.google%2Fintl%2Fru_TJ&10&0"
-                /> 
-                */}
                 <img
                   className={scss.qr__code}
                   src="http://qrcoder.ru/code/?
                     https%3A%2F%2Fabout.google%2Fintl%2Fru_TJ&10&0"
                 />
+              </div>
+            </div>
+            <div className={scss.qcodeBlock__DropDown}>
+              <img
+                className={scss.qr__code}
+                src="http://qrcoder.ru/code/?
+                    https%3A%2F%2Fabout.google%2Fintl%2Fru_TJ&10&0"
+              />
+              <div>
+                <div>
+                  <p>Выберите ресторан из нашей побдорки хитов и получи промокод</p>
+                </div>
               </div>
             </div>
           </div>
@@ -55,6 +57,16 @@ function QcodeBlock() {
                 </div>
               ))}
             </div>
+            <div className={scss.text__DropDown}>
+              {dataContent.map((item) => (
+                <div>
+                  <div>
+                    <img src={item.img} alt="content" />
+                  </div>
+                  <span>{item.title}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
@@ -62,4 +74,4 @@ function QcodeBlock() {
   );
 }
 
-export default QcodeBlock;
+export default QRcodeBlock;

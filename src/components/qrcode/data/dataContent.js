@@ -12,7 +12,7 @@ const dataContent = [
   {
     id: 3,
     img: "/images/qcodeBlock/3.svg",
-    title: "высококлассифицированные специалисты"
+    title: "классифицированные специалисты"
   },
   {
     id: 4,
