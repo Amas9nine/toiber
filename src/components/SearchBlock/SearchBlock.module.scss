@@ -716,6 +716,8 @@ section {
 		.navbar {
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
+			width: 90%;
+			left: 4%;
 			.clik{
 				width: 100%;
 			}
@@ -764,8 +766,8 @@ section {
 		}
 
 		.navbar {
-			width: 90%;
-			left: 5%;
+			width: 95%;
+			left: 3%;
 			.clik{
 				padding-top: 2%;
 				h2{
@@ -797,7 +799,7 @@ section {
 		}
 	}
 }
-@media (max-width:320px) {
+@media (max-width:330px) {
 	.container{
 		.navbar{
 			width: 100%;
