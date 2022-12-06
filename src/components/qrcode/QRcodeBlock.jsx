@@ -28,9 +28,9 @@ function QRcodeBlock() {
             <div className={scss.yellowBlock}>
               <div>
                 <div>
-                  <div className={scss.bonus}>БОНУС</div>
-                  <div className={scss.discount}>СКИДКА</div>
-                  <div className={scss.minusTen}>-10%</div>
+                  <p className={scss.bonus}>БОНУС</p>
+                  <p className={scss.discount}>СКИДКА</p>
+                  <p className={scss.minusTen}>-10%</p>
                 </div>
               </div>
             </div>
@@ -64,13 +64,11 @@ function QRcodeBlock() {
         </div>
         <div className={scss.aside}>
           <div className={scss.section}>
-            <div>ПРЕИМУЩЕСТВА</div>
+            <span className={scss.upperText}>ПРЕИМУЩЕСТВА</span>
             <div className={scss.text}>
               {card.map((item) => (
                 <div>
-                  <div>
-                    <img src={item.img} alt="content" />
-                  </div>
+                  <img src={item.img} alt="content" />
                   <span>{item.title}</span>
                 </div>
               ))}
@@ -78,9 +76,7 @@ function QRcodeBlock() {
             <div className={scss.text__DropDown}>
               {card.map((item) => (
                 <div>
-                  <div>
-                    <img src={item.img} alt="content" />
-                  </div>
+                  <img src={item.img} alt="content" />
                   <span>{item.title}</span>
                 </div>
               ))}
