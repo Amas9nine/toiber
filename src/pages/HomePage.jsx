@@ -7,8 +7,8 @@ const HomePage = () => {
   return (
     <>
       <Header />
-      <QRcodeBlock />
       <SearchBlock />
+      <QRcodeBlock />
       <Footer />
     </>
   );
