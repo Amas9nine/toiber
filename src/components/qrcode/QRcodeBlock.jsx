@@ -65,7 +65,7 @@ function QRcodeBlock() {
         </div>
         <div className={scss.aside}>
           <div className={scss.section}>
-            <span className={scss.upperText}>ПРЕИМУЩЕСТВА</span>
+            <p className={scss.upperText}>ПРЕИМУЩЕСТВА</p>
             <div className={scss.text}>
               {card.map((item) => (
                 <div>
