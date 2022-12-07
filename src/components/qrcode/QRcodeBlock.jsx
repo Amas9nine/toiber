@@ -1,7 +1,6 @@
 import scss from "./qcode.module.scss";
 import { db } from "../../firebase";
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 
 function QRcodeBlock() {
   const [card, setCard] = useState([]);
@@ -40,19 +39,21 @@ function QRcodeBlock() {
                   <p>Выберите ресторан из нашей побдорки хитов и получи промокод</p>
                 </div>
               </div>
-              <div className={scss.qr__block}>
+              <div className={scss.qrBlock}>
                 <img
-                  className={scss.qr__code}
+                  className={scss.qrCode}
                   src="http://qrcoder.ru/code/?
                     https%3A%2F%2Fabout.google%2Fintl%2Fru_TJ&10&0"
+                  alt="QRcode"
                 />
               </div>
             </div>
-            <div className={scss.qcodeBlock__DropDown}>
+            <div className={scss.qcodeDropDown}>
               <img
-                className={scss.qr__code}
+                className={scss.qrCode}
                 src="http://qrcoder.ru/code/?
                     https%3A%2F%2Fabout.google%2Fintl%2Fru_TJ&10&0"
+                alt="QRcode"
               />
               <div>
                 <div>
@@ -68,15 +69,15 @@ function QRcodeBlock() {
             <div className={scss.text}>
               {card.map((item) => (
                 <div>
-                  <img src={item.img} alt="content" />
+                  <img src={item.img} alt="img" />
                   <span>{item.title}</span>
                 </div>
               ))}
             </div>
-            <div className={scss.text__DropDown}>
+            <div className={scss.textDropDown}>
               {card.map((item) => (
                 <div>
-                  <img src={item.img} alt="content" />
+                  <img src={item.img} alt="img" />
                   <span>{item.title}</span>
                 </div>
               ))}
