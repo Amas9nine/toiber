@@ -152,7 +152,7 @@
           width: 40px;
         }
 
-        span {
+        .title {
           color: #8E3498;
           font-size: 12px;
           font-weight: bold;
@@ -321,7 +321,7 @@
             width: 40px;
           }
 
-          span {
+          .title {
             color: #8E3498;
             font-size: 12px;
             font-weight: bold;
@@ -492,7 +492,7 @@
             width: 40px;
           }
 
-          span {
+          .title {
             color: #8E3498;
             font-size: 12px;
             font-weight: bold;
@@ -662,7 +662,7 @@
             width: 40px;
           }
 
-          span {
+          .title {
             color: #8E3498;
             font-size: 12px;
             font-weight: bold;
@@ -828,7 +828,7 @@
             width: 40px;
           }
 
-          span {
+          .title {
             color: #8E3498;
             font-size: 12px;
             font-weight: bold;
@@ -995,7 +995,7 @@
             width: 40px;
           }
 
-          span {
+          .title {
             color: #8E3498;
             font-size: 12px;
             font-weight: bold;
@@ -1162,7 +1162,7 @@
             width: 40px;
           }
 
-          span {
+          .title {
             color: #8E3498;
             font-size: 10px;
             font-weight: bold;
@@ -1325,7 +1325,7 @@
             width: 40px;
           }
 
-          span {
+          .title {
             color: #8E3498;
             font-size: 10px;
             font-weight: bold;
@@ -1488,7 +1488,7 @@
             width: 40px;
           }
 
-          span {
+          .title {
             color: #8E3498;
             font-size: 10px;
             font-weight: bold;
@@ -1651,7 +1651,7 @@
             width: 40px;
           }
 
-          span {
+          .title {
             color: #8E3498;
             font-size: 10px;
             font-weight: bold;
@@ -1724,7 +1724,7 @@
 
             .minusTen {
               transform: rotate(-53deg);
-              width: 70%;
+              width: 56%;
               height: 100px;
               font-size: 60px;
               font-weight: 700;
@@ -1814,7 +1814,7 @@
             width: 40px;
           }
 
-          span {
+          .title {
             color: #8E3498;
             font-size: 10px;
             font-weight: bold;
@@ -1887,7 +1887,7 @@
 
             .minusTen {
               transform: rotate(-53deg);
-              width: 70%;
+              width: 56%;
               height: 100px;
               font-size: 60px;
               font-weight: 700;
@@ -1977,7 +1977,7 @@
             width: 40px;
           }
 
-          span {
+          .title {
             color: #8E3498;
             font-size: 10px;
             font-weight: bold;
@@ -2050,7 +2050,7 @@
 
             .minusTen {
               transform: rotate(-53deg);
-              width: 70%;
+              width: 56%;
               height: 100px;
               font-size: 60px;
               font-weight: 700;
@@ -2140,7 +2140,7 @@
             width: 40px;
           }
 
-          span {
+          .title {
             color: #8E3498;
             font-size: 10px;
             font-weight: bold;
@@ -2213,7 +2213,7 @@
 
             .minusTen {
               transform: rotate(-53deg);
-              width: 70%;
+              width: 56%;
               height: 100px;
               font-size: 60px;
               font-weight: 700;
@@ -2303,7 +2303,7 @@
             width: 40px;
           }
 
-          span {
+          .title {
             color: #8E3498;
             font-size: 10px;
             font-weight: bold;
@@ -2376,7 +2376,7 @@
 
             .minusTen {
               transform: rotate(-53deg);
-              width: 70%;
+              width: 57%;
               height: 100px;
               font-size: 60px;
               font-weight: 700;
@@ -2466,7 +2466,7 @@
             width: 40px;
           }
 
-          span {
+          .title {
             color: #8E3498;
             font-size: 10px;
             font-weight: bold;
@@ -2539,7 +2539,7 @@
 
             .minusTen {
               transform: rotate(-53deg);
-              width: 70%;
+              width: 57%;
               height: 100px;
               font-size: 60px;
               font-weight: 700;
@@ -2635,7 +2635,7 @@
             width: 40px;
           }
 
-          span {
+          .title {
             color: #8E3498;
             font-size: 10px;
             font-weight: bold;
@@ -2708,7 +2708,7 @@
 
             .minusTen {
               transform: rotate(-53deg);
-              width: 70%;
+              width: 57%;
               height: 100px;
               font-size: 60px;
               font-weight: 700;
@@ -2796,7 +2796,7 @@
             width: 40px;
           }
 
-          span {
+          .title {
             color: #8E3498;
             font-size: 10px;
             font-weight: bold;
@@ -2869,7 +2869,7 @@
 
             .minusTen {
               transform: rotate(-53deg);
-              width: 70%;
+              width: 58%;
               height: 100px;
               font-size: 60px;
               font-weight: 700;
@@ -2929,12 +2929,12 @@
     max-width: 90%;
 
     .section {
+      row-gap: 10px;
       height: 100%;
 
       .upperText {
         font-weight: 700;
-        font-size: 15px;
-        line-height: 29.26px;
+        font-size: 14px;
       }
 
       .text {
@@ -2943,29 +2943,28 @@
 
       .textDropDown {
         display: flex;
-        align-items: flex-end;
         flex-wrap: wrap;
-        height: 100%;
 
         div {
           margin: 0 auto;
-          width: 50%;
+          width: 100%;
           display: flex;
           flex-direction: column;
-          align-items: center;
-          justify-content: center;
+          justify-content: space-around;
 
           img {
-            width: 40px;
+            width: 30px;
           }
 
-          span {
-            color: #8E3498;
+          .title {
             font-size: 10px;
             font-weight: bold;
             width: 100%;
+            word-spacing: 5px;
           }
         }
+
+        row-gap: 15px;
       }
     }
   }
@@ -3032,7 +3031,7 @@
 
             .minusTen {
               transform: rotate(-53deg);
-              width: 70%;
+              width: 58%;
               height: 100px;
               font-size: 60px;
               font-weight: 700;
@@ -3090,7 +3089,8 @@
     max-width: 90%;
 
     .section {
-      height: 80%;
+      row-gap: 10px;
+      height: 100%;
 
       .upperText {
         font-weight: 700;
@@ -3103,27 +3103,28 @@
 
       .textDropDown {
         display: flex;
-        align-items: center;
         flex-wrap: wrap;
-        height: 150%;
 
         div {
           margin: 0 auto;
           width: 100%;
           display: flex;
           flex-direction: column;
+          justify-content: space-around;
 
           img {
             width: 30px;
           }
 
-          span {
-            margin: 0 auto;
+          .title {
             font-size: 10px;
             font-weight: bold;
             width: 100%;
+            word-spacing: 5px;
           }
         }
+
+        row-gap: 15px;
       }
     }
   }
@@ -3243,12 +3244,13 @@
   }
 
   .aside {
-    margin: 0px auto 100px auto;
+    margin: 0px auto 50px auto;
     height: 340px;
     max-width: 90%;
 
     .section {
-      height: 80%;
+      row-gap: 10px;
+      height: 100%;
 
       .upperText {
         font-weight: 700;
@@ -3261,27 +3263,28 @@
 
       .textDropDown {
         display: flex;
-        align-items: center;
         flex-wrap: wrap;
-        height: 100%;
 
         div {
           margin: 0 auto;
           width: 100%;
           display: flex;
           flex-direction: column;
+          justify-content: space-around;
 
           img {
             width: 30px;
           }
 
-          span {
-            margin: 0 auto;
+          .title {
             font-size: 10px;
             font-weight: bold;
             width: 100%;
+            word-spacing: 5px;
           }
         }
+
+        row-gap: 15px;
       }
     }
   }
@@ -3401,12 +3404,13 @@
   }
 
   .aside {
-    margin: 0px auto 100px auto;
+    margin: 0px auto 50px auto;
     height: 340px;
     max-width: 90%;
 
     .section {
-      height: 80%;
+      row-gap: 10px;
+      height: 100%;
 
       .upperText {
         font-weight: 700;
@@ -3419,27 +3423,28 @@
 
       .textDropDown {
         display: flex;
-        align-items: center;
         flex-wrap: wrap;
-        height: 100%;
 
         div {
           margin: 0 auto;
           width: 100%;
           display: flex;
           flex-direction: column;
+          justify-content: space-around;
 
           img {
             width: 30px;
           }
 
-          span {
-            margin: 0 auto;
+          .title {
             font-size: 10px;
             font-weight: bold;
             width: 100%;
+            word-spacing: 5px;
           }
         }
+
+        row-gap: 15px;
       }
     }
   }
@@ -3544,12 +3549,13 @@
   }
 
   .aside {
-    margin: 0px auto 100px auto;
+    margin: 0px auto 50px auto;
     height: 340px;
     max-width: 90%;
 
     .section {
-      height: 80%;
+      row-gap: 10px;
+      height: 100%;
 
       .upperText {
         font-weight: 700;
@@ -3562,27 +3568,28 @@
 
       .textDropDown {
         display: flex;
-        align-items: center;
         flex-wrap: wrap;
-        height: 100%;
 
         div {
           margin: 0 auto;
           width: 100%;
           display: flex;
           flex-direction: column;
+          justify-content: space-around;
 
           img {
             width: 30px;
           }
 
-          span {
+          .title {
             font-size: 10px;
             font-weight: bold;
             width: 100%;
             word-spacing: 5px;
           }
         }
+
+        row-gap: 15px;
       }
     }
   }
