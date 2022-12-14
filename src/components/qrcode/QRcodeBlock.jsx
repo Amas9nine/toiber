@@ -76,14 +76,6 @@ function QRcodeBlock() {
                 </div>
               ))}
             </div>
-            <div className={scss.textDropDown}>
-              {card.map((item) => (
-                <div>
-                  <img src={item.img} alt="img" />
-                  <div className={scss.title}>{t(item.title)}</div>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </div>
