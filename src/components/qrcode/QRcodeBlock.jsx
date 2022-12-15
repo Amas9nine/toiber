@@ -72,7 +72,7 @@ function QRcodeBlock() {
               {card.map((item) => (
                 <div>
                   <img src={item.img} alt="img" />
-                  <div className={scss.title}>{t(item.title)}</div>
+                  <p className={scss.title}>{t(item.title)}</p>
                 </div>
               ))}
             </div>
